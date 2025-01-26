@@ -88,25 +88,67 @@ namespace Session1
             //Console.WriteLine($"Index {Index}");
             #endregion
 
+            #region Equality in Class or struct 
             // Equality in Class or struct 
             // Equals
             // Class has equal fun Which inherited From Object Class --> Compare Reference
             // Struct has equal fun Which inherited From Object Class --> Compare Data
             // Note: Struct Don't Have Implementation  For The == Operator so we overload it
-            
-            Employee E01 = new Employee(10, 30, "Ahmed", 300000);
-            Employee E02 = new Employee(20, 30, "medo", 300000);
-            Console.WriteLine($" E01: {E01.GetHashCode()}");
-            Console.WriteLine($" E01: {E02.GetHashCode()}");
-            if (E01.Equals(E02))
-                Console.WriteLine("E01==E02");
-            else
-                Console.WriteLine("E01!=E02");
 
-            if (E01==E02)
-                Console.WriteLine("E01==E02");
-            else
-                Console.WriteLine("E01!=E02");
+            //Employee E01 = new Employee(10, 30, "Ahmed", 300000);
+            //Employee E02 = new Employee(20, 30, "medo", 300000);
+            //Console.WriteLine($" E01: {E01.GetHashCode()}");
+            //Console.WriteLine($" E01: {E02.GetHashCode()}");
+            //if (E01.Equals(E02))
+            //    Console.WriteLine("E01==E02");
+            //else
+            //    Console.WriteLine("E01!=E02");
+
+            //if (E01==E02)
+            //    Console.WriteLine("E01==E02");
+            //else
+            //    Console.WriteLine("E01!=E02"); 
+            #endregion
+            //BubbleSort == Array.Sort()
+            #region BubbleSort
+            //int[] Number = [1, 5, 2, 9, 10, 7, 4, 3];
+            //Helper.PrintArray(Number);
+            //Console.WriteLine();
+            //Helper.BubbleSort(Number);
+            //Helper.PrintArray(Number);
+
+            //Point[] points =
+            //{
+            //    new Point(6,6),
+            //    new Point(2,2),
+            //    new Point(3,3),
+            //    new Point(5,5),
+            //    new Point(1,1),
+            //    new Point(4,4),
+            //};
+            //Helper.PrintArray(points);
+            //Helper.BubbleSort(points);
+            //Console.WriteLine();
+            //Helper.PrintArray(points);
+
+            // ICompareable : CompareTo
+            // Int
+            // + : Caller > Parameter
+            // -: Caller < Parameter
+            // 0: Caller = Parameter
+
+
+
+            //Employee E01 = new Employee(10, 30, "Ahmed", 300000);
+            //Employee E02 = new Employee(20, 29, "medo", 300000);
+            //Employee E03 = new Employee(30, 20, "Ali", 300000);
+            //Employee E04 = new Employee(40, 40, "Essam", 300000);
+            //Employee[] employees = { E01, E02, E03, E04 };
+            //Helper.PrintArray(employees);
+            //Helper.BubbleSort(employees);
+            //Console.WriteLine();
+            //Helper.PrintArray(employees);
+            #endregion
         }
 
 
