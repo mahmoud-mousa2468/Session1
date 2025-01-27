@@ -1,6 +1,4 @@
-﻿using Demo;
-
-namespace Session1
+﻿namespace Session1
 {
     internal class Program
     {
@@ -160,7 +158,7 @@ namespace Session1
             //    Console.WriteLine("P02 Is Greater Than P01");
 
             #endregion
-            #region MyRegion
+            #region Generic IEquatable
             //Point[] points =
             //{
             //    new Point(6,6),
@@ -175,15 +173,15 @@ namespace Session1
             //Console.WriteLine();
             //Helper.PrintArray(points);
 
-            Employee E01 = new Employee(10, 30, "Ahmed", 300000);
-            Employee E02 = new Employee(20, 29, "medo", 300000);
-            Employee E03 = new Employee(30, 20, "Ali", 300000);
-            Employee E04 = new Employee(40, 40, "Essam", 300000);
-            Employee[] employees = { E01, E02, E03, E04 };
-            Helper.PrintArray(employees);
-            Helper.BubbleSort(employees);
-            Console.WriteLine();
-            Helper.PrintArray(employees);
+            //Employee E01 = new Employee(10, 30, "Ahmed", 300000);
+            //Employee E02 = new Employee(20, 29, "medo", 300000);
+            //Employee E03 = new Employee(30, 20, "Ali", 300000);
+            //Employee E04 = new Employee(40, 40, "Essam", 300000);
+            //Employee[] employees = { E01, E02, E03, E04 };
+            //Helper.PrintArray(employees);
+            //Helper.BubbleSort(employees);
+            //Console.WriteLine();
+            //Helper.PrintArray(employees);
 
             #endregion
 

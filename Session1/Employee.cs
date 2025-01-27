@@ -1,6 +1,6 @@
 ﻿namespace Demo
 {
-    internal class Employee : IComparable<Employee>
+    internal class Employee : IComparable<Employee>,IEquatable<Employee>
     {
         public int Id { get; set; }
         public int Age { get; set; }
@@ -21,11 +21,11 @@
         {
             return left.Id != Right.Id || left.Age != Right.Age;
         }
-        public override bool Equals(object? obj)
-        {
-            Employee E = (Employee)obj;
-            return this == E;
-        }
+        //public override bool Equals(object? obj)
+        //{
+        //    Employee E = (Employee)obj;
+        //    return this == E;
+        //}
         public override string ToString()
         {
             return $"Id : {Id} :: Age : {Age} :: Name : {Name} :: Salary : {Salary}";
@@ -44,6 +44,12 @@
                 return Age.CompareTo(other.Age);
             }
             return 1;
+        }
+
+        public bool Equals(Employee? other)
+        {
+            if (other is null) return false;
+            return this == other;
         }
     }
 }
