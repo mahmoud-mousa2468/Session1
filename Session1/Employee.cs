@@ -1,6 +1,6 @@
 ﻿namespace Demo
 {
-    internal class Employee : IComparable
+    internal class Employee : IComparable<Employee>
     {
         public int Id { get; set; }
         public int Age { get; set; }
@@ -31,10 +31,19 @@
             return $"Id : {Id} :: Age : {Age} :: Name : {Name} :: Salary : {Salary}";
         }
 
-        public int CompareTo(object? obj)
+        //public int CompareTo(object? obj)
+        //{
+        //    Employee E = (Employee)obj;
+        //    return Age.CompareTo(E.Age);
+        //}
+
+        public int CompareTo(Employee? other)
         {
-            Employee E = (Employee)obj;
-            return Age.CompareTo(E.Age);
+            if(other is not null)
+            {
+                return Age.CompareTo(other.Age);
+            }
+            return 1;
         }
     }
 }

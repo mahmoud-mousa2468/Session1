@@ -149,6 +149,44 @@ namespace Session1
             //Console.WriteLine();
             //Helper.PrintArray(employees);
             #endregion
+
+            #region Is & As
+            //Point P01 = new Point(3, 3);
+            //Point P02 = new Point(4, 4);
+            //if (P01.CompareTo("Ahmed") > 0)
+
+            //    Console.WriteLine("P01 Is Greater Than P02");
+            //else
+            //    Console.WriteLine("P02 Is Greater Than P01");
+
+            #endregion
+            #region MyRegion
+            //Point[] points =
+            //{
+            //    new Point(6,6),
+            //    new Point(2,2),
+            //    new Point(3,3),
+            //    new Point(5,5),
+            //    new Point(1,1),
+            //    new Point(4,4),
+            //};
+            //Helper.PrintArray(points);
+            //Helper.BubbleSort(points);
+            //Console.WriteLine();
+            //Helper.PrintArray(points);
+
+            Employee E01 = new Employee(10, 30, "Ahmed", 300000);
+            Employee E02 = new Employee(20, 29, "medo", 300000);
+            Employee E03 = new Employee(30, 20, "Ali", 300000);
+            Employee E04 = new Employee(40, 40, "Essam", 300000);
+            Employee[] employees = { E01, E02, E03, E04 };
+            Helper.PrintArray(employees);
+            Helper.BubbleSort(employees);
+            Console.WriteLine();
+            Helper.PrintArray(employees);
+
+            #endregion
+
         }
 
 
